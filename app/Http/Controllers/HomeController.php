@@ -2,27 +2,55 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comment;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
+
+    public function about()
     {
-        $this->middleware('auth');
+        return view('about');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function index()
+    public function comments()
     {
-        return view('home');
+        return view('comments', [
+            'products' => Product::all(),
+            'comments' => Comment::all()
+        ]);
     }
+
+    public function contact()
+    {
+        return view('contact');
+    }
+
+    public function products()
+    {
+        return view('products', ([
+            'products' => Product::all(),
+            'comments' => Comment::all()
+        ]));
+    }
+
+    public
+    function index()
+    {
+        return view('index',
+            [
+                'products' => Product::all(),
+                'comments' => Comment::all()
+            ]);
+    }
+public function showContactPage(Request $request)
+    {
+        $productId = $request->query('id');
+        $product = Product::find($productId) ;// Retrieve the product by ID
+
+
+        return view('contact', compact('product'));
+    }
+
 }

@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.headerBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_img {
+  width: 200px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.navLink {
+  /* font-size: 20px; */
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.yummyBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yummyTitles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.yummy_title {
+  font-size: 140px;
+  font-family: "Frijole", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.yummy_text {
+  color: rgba(91, 42, 22, 1);
+  font-size: 24px;
+  line-height: 44px;
+  width: 520px;
+}
+
+.read_more_btn {
+  width: 220px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgba(52, 37, 31, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.bgall {
+  width: 100%;
+  background-image: url("../Assets/Images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUs_text {
+  color: rgba(255, 255, 255, 1);
+  font-size: 45px;
+}
+
+.listBlock {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.descriptonText {
+  font-size: 35px;
+  line-height: 58px;
+}
+
+.listItem_img {
+  width: 400px;
+}
+
+.buyBtn {
+  width: 220px;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(65, 53, 49, 1);
+  text-transform: uppercase;
+  color: white;
+}
+
+.aboutUstextBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bgBrown {
+  margin: 20px 0;
+  width: 100%;
+  background-color: rgba(65, 53, 49, 1);
+  padding: 20px;
+}
+.productList {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Added for responsiveness */
+}
+
+.productCard {
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; /* Prevents content overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for a cleaner design */
+}
+
+.productCardimg {
+    width: 100%; /* Adjusted for flexibility */
+    max-width: 300px;
+    height: auto; /* Ensures proper aspect ratio */
+    display: block; /* Avoids inline spacing issues */
+    margin: 0 auto; /* Centers image if necessary */
+}
+
+.productCardtext_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Made consistent with spacing standards */
+}
+
+
+.orderBtnBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  align-content:center;
+  padding-left: 0px
+}
+.orderBtn {
+  background-color: rgba(65, 53, 49, 1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 30px;
+  cursor: pointer;
+  align-content: center;
+  padding-left: 40px;
+
+}
+
+.commentBoxopen {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.fa-comment {
+  font-size: 20px;
+  cursor: pointer;
+  color: rgba(65, 53, 49, 1);
+}
+
+.commentbox {
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  display: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inputusername,
+.commentInput {
+  width: 200px;
+  height: 30px;
+  border-bottom: 1px solid black;
+  /* border-radius: 10px;xxxxxxxxxxxxxx */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userInput,
+.commentforInput {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: rgba(65, 53, 49, 1);
+}
+
+.userInput::placeholder,
+.commentforInput::placeholder {
+  color: #000000;
+}
+
+.commentSend {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(65, 53, 49, 1);
+  color: #fff;
+  cursor: pointer;
+}
+
+.commentList {
+  display: flex;
+  flex-direction: column;
+}
+
+.listBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.commentBox_texts {
+  display: flex;
+  flex-direction: column;
+}
+.listitem {
+  display: flex;
+  flex-direction: column;
+}
+
+.comentText {
+  font-weight: normal;
+}
+
+.date {
+  font-size: 12px;
+}
+
+.bgContact {
+  width: 100%;
+  height: 300px;
+  background-image: url("../Assets/Images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact_Title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 30px;
+  padding: 100px;
+}
+
+.contactBlock {
+  margin: 20px 0;
+}
+

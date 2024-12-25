@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.headerBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_img {
+  width: 200px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.navLink {
+  /* font-size: 20px; */
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.bgAll {
+  width: 100%;
+  height: 250px;
+  background-image: url("../Assets/Images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ContactUsTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+}
+
+.contactText {
+  color: rgba(255, 255, 255, 1);
+  font-size: 35px;
+}
+
+.contactBlock {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.rightContactblock {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.flexBox {
+  display: flex;
+  gap: 20px;
+}
+
+.inputItem {
+  border: none;
+  outline: none;
+}
+
+.nameInputblock {
+  width: 260px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  /* justify-content: center; */
+  padding-left: 10px;
+  align-items: center;
+}
+
+.messageInput {
+  width: 850px;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.leftContactblock {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.addresBlock {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.contact_icons {
+  display: flex;
+  gap: 20px;
+}
+
+.fa-instagram,
+.fa-whatsapp,
+.fa-facebook {
+  color: #000000;
+}
+
+.sendBtnblock {
+  display: flex;
+  padding: 20px;
+}
+
+.messageBtn {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(65, 53, 49, 1);
+  color: #fff;
+  cursor: pointer;
+}
+
+.bgbrown {
+  background-color: rgba(65, 53, 49, 1);
+  width: 100%;
+}
+
+.instagram_addressBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram_addressText {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.instaLink {
+  text-decoration: none;
+}
+
+.footer_block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.footerItem{
+  display:flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  color: #fff;
+  gap: 10px;
+}
+
+.worktimeTitle{
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.adress{
+  width: 200px;
+}
